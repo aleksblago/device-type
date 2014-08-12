@@ -22,7 +22,7 @@ device = (function() {
 		firefoxOsTablet: function() {return _is('tablet') && this.firefoxOS(); },
 		phone: function() {return this.iphone() || this.ipod() || this.androidPhone() || this.windowsPhone() || this.firefoxOsPhone(); },
 		tablet: function() {return this.ipad() || this.androidTablet() || this.windowsTablet() || this.firefoxOsTablet(); },
-		desktop: function() {return !this.mobile() && !this.tablet(); }
+		desktop: function() {return !this.phone() && !this.tablet(); }
 	};
 
 	function _platform() {
