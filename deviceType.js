@@ -17,7 +17,7 @@ device = (function() {
 		windows: function() {return _is('windows'); },
 		windowsPhone: function() {return _is('phone') && this.windows(); },
 		windowsTablet: function() {return _is('touch') && this.windows(); },
-		firefoxOS: function() {return _is('; rv:') || _is('mobile;') || _('tablet;'); },
+		firefoxOS: function() {return _is('; rv:') || _is('mobile;') || _is('tablet;'); },
 		firefoxOsPhone: function() {return _is('mobile') && this.firefoxOS(); },
 		firefoxOsTablet: function() {return _is('tablet') && this.firefoxOS(); },
 		phone: function() {return this.iphone() || this.ipod() || this.androidPhone() || this.windowsPhone() || this.firefoxOsPhone(); },
