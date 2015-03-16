@@ -1,6 +1,7 @@
 var device = (window.device || {});
 
 device = (function() {
+	'use strict';
 
 	var userAgent = navigator.userAgent.toLowerCase(),
 		docElement = window.document.documentElement;
@@ -75,10 +76,6 @@ device = (function() {
 	
 	function _addClass(className) {
 		docElement.classList.add(className);
-	}
-	
-	function _removeClass(className) {
-		docElement.classList.remove(className);
 	}
 
 	return {
